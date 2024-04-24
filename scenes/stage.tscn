@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://2uk2b5gr1et7"]
+
+[ext_resource type="PackedScene" uid="uid://ctbosgcjx4ns1" path="res://scenes/player.tscn" id="1_33ktu"]
+[ext_resource type="Texture2D" uid="uid://d3r31bfkagt0s" path="res://graphics/Tetris Effect Screenshot 2020.11.13 - 20.29.02.56.png" id="2_nf235"]
+
+[node name="stage" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_33ktu")]
+position = Vector2(500, 540)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+show_behind_parent = true
+z_index = -5
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("2_nf235")
+centered = false

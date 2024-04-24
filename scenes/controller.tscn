@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://ddd8g21bpy78d"]
+
+[sub_resource type="GDScript" id="GDScript_yp3wu"]
+script/source = "class_name shit
+
+var left = \"left\"
+var right = \"right\"
+var quickDrop = \"quick drop\"
+var instDrop = \"inst drop\"
+var hold = \"hold\"
+var focus = \"focus\"
+var rotCW = \"rot cw\"
+var rotCCW = \"rot ccw\"
+"
+
+[node name="controller" type="Node2D"]
+script = SubResource("GDScript_yp3wu")

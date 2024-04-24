@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctbosgcjx4ns1"]
+
+[ext_resource type="Script" path="res://scenes/player.gd" id="1_g204k"]
+[ext_resource type="PackedScene" uid="uid://cm457qdufrhah" path="res://scenes/matrix.tscn" id="1_uvhnl"]
+
+[node name="player" type="Node2D"]
+script = ExtResource("1_g204k")
+
+[node name="matrix" parent="." instance=ExtResource("1_uvhnl")]
+
+[node name="line count" type="RichTextLabel" parent="."]
+offset_left = 183.0
+offset_top = 274.0
+offset_right = 431.0
+offset_bottom = 314.0
+
+[node name="timer" type="RichTextLabel" parent="."]
+offset_left = 182.0
+offset_top = 217.0
+offset_right = 407.0
+offset_bottom = 257.0
